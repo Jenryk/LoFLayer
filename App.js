@@ -16,12 +16,6 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  songTitle: {
-    marginBottom: '2%',
-    color: 'snow',
-    fontFamily: 'Montserrat',
-    fontSize: '30px',
-  },
   artistName:{
     color: 'snow',
     marginTop: '0.5%',

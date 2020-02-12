@@ -1,5 +1,6 @@
 import React from 'react';
-import {StyleSheet, Image} from 'react-native';
+import {Image} from 'react-native';
+import {styles} from './styles'
 import LofiGirl from '../../assets/images/lofi_girl.png';
 export function Album() {
     return(
@@ -7,10 +8,3 @@ export function Album() {
     )
 }
 
-const styles = StyleSheet.create({
-    album: {
-      width: '300px',
-      height: '300px',
-      borderRadius: '150px',
-    }
-});
