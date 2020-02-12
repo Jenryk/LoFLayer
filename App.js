@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
-import { StyleSheet, Text, View , Image} from 'react-native';
-import GirlImage from './assets/images/lofi_girl.png'
+import { StyleSheet} from 'react-native';
 import * as Font from 'expo-font'
 import {Root} from './components/Root'
 export default function App() {
