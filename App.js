@@ -16,10 +16,9 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  artistName:{
-    color: 'snow',
-    marginTop: '0.5%',
-    fontSize: '16px',
-    
+  container: {
+    backgroundColor: '#000000',
+    alignItems: 'center',
+    justifyContent: 'center',
   }
 });

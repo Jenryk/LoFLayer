@@ -1,11 +1,12 @@
 import React from  'react';
 import {StyleSheet,  View } from 'react-native';
-import {Album, Title} from './Player'
+import {Title, Artist, Player} from './Player'
 export function Root(){
     return(
         <View style={styles.container}>
             <Title/>
-            <Album/>
+            <Player/>
+            <Artist/>
         </View>
     );
 };
