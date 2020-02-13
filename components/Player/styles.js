@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
         marginBottom: '2%',
         color: 'snow',
         fontFamily: 'Montserrat',
-        fontSize: '35px',
+        fontSize: 35,
     },
     nextButton: {
         width: '125px',
@@ -16,6 +16,7 @@ export const styles = StyleSheet.create({
         width: '125px',
         height: '125px',
         tintColor: 'white',
+        transform: [{scaleX: -1}]
     },
     playerButton: {
         width: '150px',
@@ -25,19 +26,18 @@ export const styles = StyleSheet.create({
         top: '0',
         right: '0',
         bottom: '0',
-        display: 'block',
         margin: 'auto',
         tintColor: 'white',
     },
     albumStyle: {
-        opacity: '50%',
+        opacity: 50,
         width: '300px',
         height: '300px',
-        borderRadius: '150px',
+        borderRadius: 150,
     },
     artistName:{
         color: 'snow',
         marginTop: '1%',
-        fontSize: '20px',    
+        fontSize: 20,    
     }
 })
