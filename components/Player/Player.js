@@ -7,7 +7,7 @@ export function Player() {
     return(
         <View style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
             <Image source={NextIcon} style={styles.previousButton}></Image>
-            <Album/>
+            <Album></Album>
             <Image source={NextIcon} style={styles.nextButton}/>
         </View>
     )

@@ -1,19 +1,27 @@
 import React, { useEffect, useState } from 'react';
-import { Text, StyleSheet} from 'react-native';
+import { View, Text, StyleSheet} from 'react-native';
 import * as Font from 'expo-font'
 import {Root} from './components/Root'
 export default class App extends React.Component{
-  componentDidMount(){
-  Font.loadAsync({
+  state = {
+    fontLoaded: false,
+  };
+  async componentDidMount(){
+    await Font.loadAsync({
       'Montserrat' : require('./assets/fonts/Montserrat-Regular.ttf'),
       'Roboto' : require('./assets/fonts/Roboto-Regular.ttf')
     })
+    this.setState({fontLoaded: true});
    }
   
 
   render(){
     return(
-      <Text>Could not load fonts sorry : /</Text>
+      <View style={styles.container}>
+      {
+          this.state.fontLoaded ? (<Root/>) : null
+      }
+      </View>
     );
   }
 
@@ -24,5 +32,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#000000',
     alignItems: 'center',
     justifyContent: 'center',
+    flex: 1,
   }
 });
