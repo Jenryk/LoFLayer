@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { View, Image } from 'react-native'
 import { Album } from './Album'
 import NextIcon from '../../assets/images/next.png'

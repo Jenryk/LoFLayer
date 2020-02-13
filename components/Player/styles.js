@@ -22,8 +22,8 @@ export const styles = StyleSheet.create({
         width: 150,
         height: 150,
         position: 'absolute',
-        right: 25,
-        top: 20,
+        right: 11,
+        top: 12,
         tintColor: 'white',
     },
     albumStyle: {
