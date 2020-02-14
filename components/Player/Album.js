@@ -25,12 +25,10 @@ export class Album extends React.Component{
             let status = await this.state.soundObject.getStatusAsync()
             if(this.state.songState == images.play && !this.state.soundStatus.isPlaying){
                 await this.state.soundObject.playAsync();
-                alert(status.isPlaying)
                 this.changeState()
             }
             else if(this.state.songState == images.pause){
                 await this.state.soundObject.stopAsync();
-                alert(status.isPlaying)
                 this.changeState()
             }
             
